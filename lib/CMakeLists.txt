@@ -1,6 +1,6 @@
 INCLUDE(CheckFunctionExists)
 
-INSTALL(FILES zip.h DESTINATION include)
+INSTALL(FILES zip.h DESTINATION libzip)
 
 # from http://www.cmake.org/Wiki/CMakeMacroLibtoolFile
 MACRO(GET_TARGET_PROPERTY_WITH_DEFAULT _variable _target _property _default_value)
