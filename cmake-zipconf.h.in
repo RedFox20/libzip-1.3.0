@@ -102,6 +102,7 @@ typedef unsigned long zip_uint64_t;
 typedef unsigned long long zip_uint64_t;
 #endif
 
+/*
 #define ZIP_INT8_MIN	-0x80
 #define ZIP_INT8_MAX	 0x7f
 #define ZIP_UINT8_MAX	 0xff
@@ -117,5 +118,22 @@ typedef unsigned long long zip_uint64_t;
 #define ZIP_INT64_MIN	 (-ZIP_INT64_MAX-1LL)
 #define ZIP_INT64_MAX	 0x7fffffffffffffffLL
 #define ZIP_UINT64_MAX	 0xffffffffffffffffULL
+*/
+
+#define ZIP_INT8_MIN        INT8_MIN
+#define ZIP_INT8_MAX        INT8_MAX
+#define ZIP_UINT8_MAX       UINT8_MAX
+
+#define ZIP_INT16_MIN       INT16_MIN
+#define ZIP_INT16_MAX       INT16_MAX
+#define ZIP_UINT16_MAX      UINT16_MAX
+
+#define ZIP_INT32_MIN       INT32_MIN
+#define ZIP_INT32_MAX       INT32_MAX
+#define ZIP_UINT32_MAX      UINT32_MAX
+
+#define ZIP_INT64_MIN       INT64_MIN
+#define ZIP_INT64_MAX       INT64_MAX
+#define ZIP_UINT64_MAX      UINT64_MAX
 
 #endif /* zipconf.h */
