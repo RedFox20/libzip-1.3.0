@@ -168,7 +168,6 @@
 		4B01D72615B2F57F002D5007 /* zipmerge.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B01D72215B2F572002D5007 /* zipmerge.c */; };
 		4B01D73215B2F5EE002D5007 /* zipconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDC729E15B1B4E900236D3C /* zipconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B01D73415B2F5F4002D5007 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BDC72A015B1B56400236D3C /* config.h */; };
-		4B01D73C15B2F6AF002D5007 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B01D70815B2F4CF002D5007 /* libz.dylib */; };
 		4B0454B81E8E3E02002FA1F9 /* zip_source_get_compression_flags.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0454B71E8E3DF7002FA1F9 /* zip_source_get_compression_flags.c */; };
 		4B0454B91E8E3E03002FA1F9 /* zip_source_get_compression_flags.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0454B71E8E3DF7002FA1F9 /* zip_source_get_compression_flags.c */; };
 		4B0454BA1E8E3E08002FA1F9 /* zip_source_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0454B61E8E3DF7002FA1F9 /* zip_source_compress.c */; };
@@ -923,7 +922,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B01D73C15B2F6AF002D5007 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2238,6 +2236,7 @@
 				HEADER_SEARCH_PATHS = "../lib/gladman-fcrypt";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "at.nih.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -2269,6 +2268,7 @@
 				HEADER_SEARCH_PATHS = "../lib/gladman-fcrypt";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "@rpath";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "at.nih.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
